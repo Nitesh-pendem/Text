@@ -1,0 +1,88 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\title{1-1.4-4}
+\author{AI24BTECH11026 - Pendem nitesh sri satya$^{*}$% <-this % stops a space
+}
+\maketitle
+\begin{enumerate}
+    \item Find the coordinates of the point which divides the line segment joining the points $(4,-3)$ and $(8,5)$ in the ratio $3:1$ internally\\
+\solution
+Let the position vectors of the points \((4, -3)\) and \((8, 5)\) be represented as \(\vec{A}\) and \(\vec{B}\) respectively. Therefore, we have:
+\begin{align}
+\vec{A} = 4\vec{i} - 3\vec{j}
+\end{align}
+\begin{align}
+\vec{B} = 8\vec{i} + 5\vec{j}
+\end{align}
+
+Let the position vector of the point \(\vec{P}\) that divides the line segment \(\vec{AB}\) in the ratio \(3:1\) internally be \(\vec{P}\).
+
+Using the section formula in vector form, the position vector \(\vec{P}\) is given by:
+\begin{align}
+\vec{P} = \frac{m\vec{B} + n\vec{A}}{m+n}
+\end{align}
+where \(m = 3\) and \(n = 1\).
+
+Substituting the values, we get:
+\begin{align}
+\vec{P} = \frac{3(8\vec{i} + 5\vec{j}) + 1(4\vec{i} - 3\vec{j})}{3+1}
+\end{align}
+\begin{align}
+\vec{P} = \frac{(24\vec{i} + 15\vec{j}) + (4\vec{i} - 3\vec{j})}{4}
+\end{align}
+\begin{align}
+\vec{P} = \frac{(24\vec{i} + 4\vec{i}) + (15\vec{j} - 3\vec{j})}{4}
+\end{align}
+\begin{align}
+\vec{P} = \frac{28\vec{i} + 12\vec{j}}{4}
+\end{align}
+\begin{align}
+\vec{P} = 7\vec{i} + 3\vec{j}
+\end{align}
+
+Therefore, the coordinates of the point are \((7, 3)\).
+\end{enumerate}
+\end{document}
+
